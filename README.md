@@ -35,7 +35,7 @@ This is the main script that handles SMB enumeration, share access testing, and 
 #### How to Use:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/SMB-Scanner.git
+   git clone https://github.com/KomodoSec-Research/SMBScanner.git
    cd SMBScanner/scripts
    ```
 2. Open PowerShell and run:
