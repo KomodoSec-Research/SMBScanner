@@ -36,7 +36,7 @@ This is the main script that handles SMB enumeration, share access testing, and 
 1. Clone the repository:
    ```bash
    git clone https://github.com/YourUsername/SMB-Scanner.git
-   cd SMB-Scanner/scripts
+   cd SMBScanner/scripts
    ```
 2. Open PowerShell and run:
    ```powershell
@@ -65,7 +65,7 @@ This script performs an Nmap scan to identify hosts with SMB (port 445) open and
 #### How to Use:
 1. Run the script with administrative privileges:
    ```powershell
-   .\nmap_discovery.ps1 -NetworkRange 192.168.1.0/24 -OutputFile .\hosts.txt
+   .\nmap_smb_scan.ps1 -NetworkRange 192.168.1.0/24 -OutputFile .\hosts.txt
    ```
    Replace:
    - `192.168.1.0/24` with your target network range.
@@ -93,7 +93,7 @@ The scripts generate the following output files:
 
 1. Run the Nmap discovery script:
    ```powershell
-   .\nmap_discovery.ps1 -NetworkRange 10.10.0.0/16 -OutputFile .\hosts.txt
+   .\nmap_smb_scan.ps1 -NetworkRange 10.10.0.0/16 -OutputFile .\hosts.txt
    ```
 
 2. Use the SMB scanner to enumerate shares and search for sensitive files:
@@ -111,11 +111,11 @@ Here are some real-world examples of the script in action (redacted for privacy)
 
 1. **SMB Shares with Read Access**  
    Shares with overly permissive configurations exposed sensitive files:
-   ![Shares with Read Access](link-to-image1)
+   ![Shares with Read Access](https://github.com/KomodoSec-Research/SMBScanner/blob/main/images/enum.png)
 
 2. **Sensitive Files Discovered**  
    Files containing plaintext passwords, certificates, and SCADA data:
-   ![Sensitive Files](link-to-image2)
+   ![Sensitive Files](https://github.com/KomodoSec-Research/SMBScanner/blob/main/images/passes.png)
 
 ---
 
